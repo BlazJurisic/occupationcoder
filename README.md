@@ -34,6 +34,17 @@ pip install occupationcoder-version.tar.gz
 ```
 The first line creates the .tar.gz file, the second navigates to the directory with the packaged code in, and the third line installs the package. The version number to use will be evident from the name of the .tar.gz file.
 
+##
+In order to make package work for you, you might need to do following :
+Clone 
+```
+pip install dask[dataframe] --upgrade  # or pip install
+
+import nltk
+nltk.download('wordnet')
+nltk.download('punkt')
+```
+
 ### Running the code as a python package
 Importing, and creating an instance, of the coder
 ```Python
